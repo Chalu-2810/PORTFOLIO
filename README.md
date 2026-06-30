@@ -9,7 +9,7 @@ This is my personal portfolio website showcasing my skills, projects, and achiev
 - Interests: Data Science, AI Tools, ML, Python Developer
 
 ## 🚀 Live Demo
-🌐 Live Link:
+🌐 Live Link:https://chalu-2810.github.io/PORTFOLIO/
 
 ## 🛠️ Technologies Used
 - HTML
