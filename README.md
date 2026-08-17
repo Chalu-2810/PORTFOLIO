@@ -1,11 +1,11 @@
 
 ## 🌐 My Portfolio Website
 
-This is my personal portfolio website showcasing my skills, projects, and achievements as a Computer Science Engineering student.
+This is my personal portfolio website showcasing my skills, projects, and achievements as a Computer Science Engineering Graduate.
 
 ## 👨‍💻 About Me
 - Name: Chalukya B
-- Role: B.E CSE Student (Final Year)
+- Role: B.E CSE Graduate
 - Interests: Data Science, AI Tools, ML, Python Developer
 
 ## 🚀 Live Demo
