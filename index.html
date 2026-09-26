@@ -3074,97 +3074,187 @@ border: 1px solid rgba(255, 255, 255, 0.1);
 
 
         <!-- ============ PROJECT 4: Placement Prediction & Job Recommendation ============ -->
-        <article class="project-showcase-card scroll-reveal">
-            <div class="ps-badges">
-                <span class="ps-badge ps-badge-featured">⭐ Featured Project</span>
-                <span class="ps-badge ps-badge-enterprise">ML Classification System</span>
-            </div>
+    <!-- ================= PLACEMENT AI PROJECT ================= -->
+<div class="project-showcase-card featured">
 
-            <h3 class="ps-title">Placement Prediction &amp; Intelligent Job Recommendation System</h3>
-            <p class="ps-subtitle">Predictive Career Analytics for Students</p>
-            <p class="ps-pitch">
-                A machine learning system that predicts a student's placement probability and recommends personalized job roles based on academic performance, technical skills, and aptitude — turning raw student data into a career roadmap.
-            </p>
+  <div class="ps-badges">
+    <span class="ps-badge ps-badge-featured">⭐ Featured Project</span>
+    <span class="ps-badge ps-badge-enterprise">AI Platform</span>
+  </div>
 
-            <div class="ps-metrics">
-                <div class="ps-metric"><div class="ps-metric-value">4</div><div class="ps-metric-label">ML Algorithms Tested</div></div>
-                <div class="ps-metric"><div class="ps-metric-value">~88%</div><div class="ps-metric-label">Best Model Accuracy</div></div>
-                <div class="ps-metric"><div class="ps-metric-value">1</div><div class="ps-metric-label">Real-Time Dashboard</div></div>
-            </div>
+  <h3 class="ps-title">PlacementAI</h3>
+  <p class="ps-subtitle">
+    AI Career Copilot & Job Market Intelligence Platform
+  </p>
 
-            <div class="ps-section">
-                <h4 class="ps-section-title">🎯 Problem &amp; Solution</h4>
-                <p class="ps-text">
-                    Placement cells and students both lack a data-driven way to gauge placement readiness before final interviews — decisions are often based on gut feeling rather than evidence. This system solves that gap with a full classification pipeline: student data (academic scores, CGPA, backlog history, technical assessments) is cleaned, statistically profiled, and transformed through a feature engineering layer that encodes categorical fields and normalizes skill and performance metrics.
-                </p>
-                <p class="ps-text">
-                    Multiple classification algorithms — Logistic Regression, Decision Trees, Random Forest, and SVM — were trained and compared through cross-validation, with hyperparameter tuning applied to the top performer to maximize predictive accuracy. On top of placement prediction, a recommendation engine maps each student's skill profile against role requirements to suggest job roles they are best positioned for, along with a structured 30/60/90-day preparation roadmap. All predictions surface through an interactive Streamlit dashboard, giving students and placement coordinators real-time, explainable feedback rather than a static report.
-                </p>
-            </div>
+  <p class="ps-pitch">
+    An end-to-end AI-powered career intelligence platform that helps students
+    and job seekers evaluate career readiness, identify skill gaps, compare
+    resumes with target roles, discover job opportunities, and explore job
+    market insights through interactive analytics.
+  </p>
 
-            <div class="ps-section">
-                <h4 class="ps-section-title">✅ Key Features</h4>
-                <div class="ps-features-grid">
-                    <div class="ps-feature"><span class="ps-feature-check">✓</span>Placement probability prediction (classification)</div>
-                    <div class="ps-feature"><span class="ps-feature-check">✓</span>Multi-model benchmarking &amp; selection</div>
-                    <div class="ps-feature"><span class="ps-feature-check">✓</span>Hyperparameter tuning for optimal accuracy</div>
-                    <div class="ps-feature"><span class="ps-feature-check">✓</span>Automated feature engineering &amp; preprocessing</div>
-                    <div class="ps-feature"><span class="ps-feature-check">✓</span>Personalized job role recommendation engine</div>
-                    <div class="ps-feature"><span class="ps-feature-check">✓</span>Real-time interactive Streamlit dashboard</div>
-                </div>
-            </div>
+  <!-- Metrics -->
+  <div class="ps-metrics">
+    <div class="ps-metric">
+      <div class="ps-metric-value">9+</div>
+      <div class="ps-metric-label">Core Features</div>
+    </div>
 
-            <div class="ps-section">
-                <h4 class="ps-section-title">📊 Business Value</h4>
-                <ul class="ps-impact-list">
-                    <li>Gives students an evidence-based readiness benchmark</li>
-                    <li>Helps placement cells prioritize at-risk students early</li>
-                    <li>Personalized recommendations improve preparation focus</li>
-                    <li>Reduces guesswork in career and skill-gap planning</li>
-                </ul>
-            </div>
+    <div class="ps-metric">
+      <div class="ps-metric-value">Flask</div>
+      <div class="ps-metric-label">Backend</div>
+    </div>
 
-            <div class="ps-section">
-                <h4 class="ps-section-title">🏗️ Architecture</h4>
-                <div class="ps-architecture">
-                    <span class="ps-arch-node">Student Data</span>
-                    <span class="ps-arch-arrow">→</span>
-                    <span class="ps-arch-node">Preprocessing</span>
-                    <span class="ps-arch-arrow">→</span>
-                    <span class="ps-arch-node">Model Training</span>
-                    <span class="ps-arch-arrow">→</span>
-                    <span class="ps-arch-node">Recommendation Engine</span>
-                    <span class="ps-arch-arrow">→</span>
-                    <span class="ps-arch-node">Dashboard</span>
-                </div>
-            </div>
+    <div class="ps-metric">
+      <div class="ps-metric-value">TiDB</div>
+      <div class="ps-metric-label">Cloud Database</div>
+    </div>
 
-            <div class="ps-section">
-                <h4 class="ps-section-title">🛠️ Tech Stack</h4>
-                <div class="ps-tech-pills">
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">Scikit-learn</span>
-                    <span class="tech-tag">Pandas</span>
-                    <span class="tech-tag">NumPy</span>
-                    <span class="tech-tag">Streamlit</span>
-                </div>
-            </div>
+    <div class="ps-metric">
+      <div class="ps-metric-value">Render</div>
+      <div class="ps-metric-label">Production Deploy</div>
+    </div>
+  </div>
 
-            <div class="project-links">
-                <a href="https://github.com/Chalu-2810/PlacementAI" target="_blank" rel="noopener noreferrer" class="project-link primary">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
-                    </svg>
-                    View Project
-                </a>
-                <a href="https://github.com/Chalu-2810" target="_blank" rel="noopener noreferrer" class="project-link secondary">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
-                    </svg>
-                    GitHub
-                </a>
-            </div>
-        </article>
+  <!-- Problem -->
+  <div class="ps-section">
+    <h4 class="ps-section-title">Problem</h4>
+
+    <p class="ps-text">
+      Most placement platforms only list jobs. PlacementAI goes beyond job
+      listings by helping users understand their career readiness, measure
+      qualification against target roles, identify missing skills, and build
+      personalized learning roadmaps using AI and analytics.
+    </p>
+  </div>
+
+  <!-- Features -->
+  <div class="ps-section">
+    <h4 class="ps-section-title">Key Features</h4>
+
+    <div class="ps-features-grid">
+
+      <div class="ps-feature">
+        <span class="ps-feature-check">✓</span>
+        AI Career Readiness Assessment
+      </div>
+
+      <div class="ps-feature">
+        <span class="ps-feature-check">✓</span>
+        Job Opportunity Discovery
+      </div>
+
+      <div class="ps-feature">
+        <span class="ps-feature-check">✓</span>
+        Resume vs Target Role Analysis
+      </div>
+
+      <div class="ps-feature">
+        <span class="ps-feature-check">✓</span>
+        Skill Gap Identification
+      </div>
+
+      <div class="ps-feature">
+        <span class="ps-feature-check">✓</span>
+        Personalized Career Roadmap
+      </div>
+
+      <div class="ps-feature">
+        <span class="ps-feature-check">✓</span>
+        Job Market Intelligence Dashboard
+      </div>
+
+      <div class="ps-feature">
+        <span class="ps-feature-check">✓</span>
+        User Authentication & Profiles
+      </div>
+
+      <div class="ps-feature">
+        <span class="ps-feature-check">✓</span>
+        Interactive Analytics
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Architecture -->
+  <div class="ps-section">
+    <h4 class="ps-section-title">Architecture</h4>
+
+    <div class="ps-architecture">
+      <span class="ps-arch-node">Web UI</span>
+      <span class="ps-arch-arrow">→</span>
+
+      <span class="ps-arch-node">Flask REST API</span>
+      <span class="ps-arch-arrow">→</span>
+
+      <span class="ps-arch-node">ML Engine</span>
+      <span class="ps-arch-arrow">→</span>
+
+      <span class="ps-arch-node">TiDB Cloud</span>
+      <span class="ps-arch-arrow">→</span>
+
+      <span class="ps-arch-node">Render</span>
+    </div>
+  </div>
+
+  <!-- Tech Stack -->
+  <div class="ps-section">
+    <h4 class="ps-section-title">Technology Stack</h4>
+
+    <div class="ps-tech-pills">
+      <span class="tech-tag-pill">Python</span>
+      <span class="tech-tag-pill">Flask</span>
+      <span class="tech-tag-pill">MySQL</span>
+      <span class="tech-tag-pill">TiDB Cloud</span>
+      <span class="tech-tag-pill">Scikit-learn</span>
+      <span class="tech-tag-pill">Pandas</span>
+      <span class="tech-tag-pill">NumPy</span>
+      <span class="tech-tag-pill">REST API</span>
+      <span class="tech-tag-pill">Gunicorn</span>
+      <span class="tech-tag-pill">Render</span>
+      <span class="tech-tag-pill">HTML</span>
+      <span class="tech-tag-pill">CSS</span>
+      <span class="tech-tag-pill">JavaScript</span>
+    </div>
+  </div>
+
+  <!-- Impact -->
+  <div class="ps-section">
+    <h4 class="ps-section-title">Impact</h4>
+
+    <ul class="ps-impact-list">
+      <li>Built a production-ready AI career guidance platform</li>
+      <li>Implemented secure cloud database architecture</li>
+      <li>Integrated machine learning with real-world analytics</li>
+      <li>Deployed a full-stack application on Render using Gunicorn</li>
+    </ul>
+  </div>
+
+  <!-- Links -->
+  <div class="project-links">
+
+    <a
+      class="project-link primary"
+      href="https://placement-ai-9cvb.onrender.com/login"
+      target="_blank"
+    >
+      🚀 Live Demo
+    </a>
+
+    <a
+      class="project-link secondary"
+      href="https://github.com/Chalu-2810/Placement-AI-AI-Career-Readiness-Job-Intelligence-Platform"
+      target="_blank"
+    >
+      💻 GitHub
+    </a>
+
+  </div>
+
+</div>
+<!-- ======================================================= -->
 
         <!-- ============ PROJECT 5: Job Market Intelligence Dashboard ============ -->
         <article class="project-showcase-card scroll-reveal">
