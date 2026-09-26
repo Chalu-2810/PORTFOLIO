@@ -3070,190 +3070,178 @@ border: 1px solid rgba(255, 255, 255, 0.1);
 
 </article>
 
-
-
-
-        <!-- ============ PROJECT 4: Placement Prediction & Job Recommendation ============ -->
-    <!-- ================= PLACEMENT AI PROJECT ================= -->
-<div class="project-showcase-card featured">
-
-  <div class="ps-badges">
-    <span class="ps-badge ps-badge-featured">⭐ Featured Project</span>
-    <span class="ps-badge ps-badge-enterprise">AI Platform</span>
-  </div>
-
-  <h3 class="ps-title">PlacementAI</h3>
-  <p class="ps-subtitle">
-    AI Career Copilot & Job Market Intelligence Platform
-  </p>
-
-  <p class="ps-pitch">
-    An end-to-end AI-powered career intelligence platform that helps students
-    and job seekers evaluate career readiness, identify skill gaps, compare
-    resumes with target roles, discover job opportunities, and explore job
-    market insights through interactive analytics.
-  </p>
-
-  <!-- Metrics -->
-  <div class="ps-metrics">
-    <div class="ps-metric">
-      <div class="ps-metric-value">9+</div>
-      <div class="ps-metric-label">Core Features</div>
+<!-- ============ PROJECT 4: PlacementAI ============ -->
+<article class="project-showcase-card featured scroll-reveal">
+    <div class="ps-badges">
+        <span class="ps-badge ps-badge-featured">⭐ Featured Project</span>
+        <span class="ps-badge ps-badge-enterprise">Explainable AI Platform</span>
     </div>
 
-    <div class="ps-metric">
-      <div class="ps-metric-value">Flask</div>
-      <div class="ps-metric-label">Backend</div>
-    </div>
-
-    <div class="ps-metric">
-      <div class="ps-metric-value">TiDB</div>
-      <div class="ps-metric-label">Cloud Database</div>
-    </div>
-
-    <div class="ps-metric">
-      <div class="ps-metric-value">Render</div>
-      <div class="ps-metric-label">Production Deploy</div>
-    </div>
-  </div>
-
-  <!-- Problem -->
-  <div class="ps-section">
-    <h4 class="ps-section-title">Problem</h4>
-
-    <p class="ps-text">
-      Most placement platforms only list jobs. PlacementAI goes beyond job
-      listings by helping users understand their career readiness, measure
-      qualification against target roles, identify missing skills, and build
-      personalized learning roadmaps using AI and analytics.
+    <h3 class="ps-title">PlacementAI</h3>
+    <p class="ps-subtitle">AI Career Readiness &amp; Job Intelligence Platform</p>
+    <p class="ps-pitch">
+        A production-oriented career intelligence platform that goes beyond a simple placement
+        predictor: an explainable ML readiness estimate with per-prediction factor breakdown, a
+        real external job-market intelligence layer, transparent skill-gap prioritization, and a
+        personalized roadmap with persistent progress tracking — built with a from-scratch design
+        system and a 166-test regression suite.
     </p>
-  </div>
 
-  <!-- Features -->
-  <div class="ps-section">
-    <h4 class="ps-section-title">Key Features</h4>
-
-    <div class="ps-features-grid">
-
-      <div class="ps-feature">
-        <span class="ps-feature-check">✓</span>
-        AI Career Readiness Assessment
-      </div>
-
-      <div class="ps-feature">
-        <span class="ps-feature-check">✓</span>
-        Job Opportunity Discovery
-      </div>
-
-      <div class="ps-feature">
-        <span class="ps-feature-check">✓</span>
-        Resume vs Target Role Analysis
-      </div>
-
-      <div class="ps-feature">
-        <span class="ps-feature-check">✓</span>
-        Skill Gap Identification
-      </div>
-
-      <div class="ps-feature">
-        <span class="ps-feature-check">✓</span>
-        Personalized Career Roadmap
-      </div>
-
-      <div class="ps-feature">
-        <span class="ps-feature-check">✓</span>
-        Job Market Intelligence Dashboard
-      </div>
-
-      <div class="ps-feature">
-        <span class="ps-feature-check">✓</span>
-        User Authentication & Profiles
-      </div>
-
-      <div class="ps-feature">
-        <span class="ps-feature-check">✓</span>
-        Interactive Analytics
-      </div>
-
+    <div class="ps-metrics">
+        <div class="ps-metric"><div class="ps-metric-value">20</div><div class="ps-metric-label">Flask Routes</div></div>
+        <div class="ps-metric"><div class="ps-metric-value">166</div><div class="ps-metric-label">Automated Tests</div></div>
+        <div class="ps-metric"><div class="ps-metric-value">5</div><div class="ps-metric-label">ML Models Compared</div></div>
+        <div class="ps-metric"><div class="ps-metric-value">9</div><div class="ps-metric-label">Database Tables</div></div>
+        <div class="ps-metric"><div class="ps-metric-value">12</div><div class="ps-metric-label">Engineered Features</div></div>
     </div>
-  </div>
 
-  <!-- Architecture -->
-  <div class="ps-section">
-    <h4 class="ps-section-title">Architecture</h4>
-
-    <div class="ps-architecture">
-      <span class="ps-arch-node">Web UI</span>
-      <span class="ps-arch-arrow">→</span>
-
-      <span class="ps-arch-node">Flask REST API</span>
-      <span class="ps-arch-arrow">→</span>
-
-      <span class="ps-arch-node">ML Engine</span>
-      <span class="ps-arch-arrow">→</span>
-
-      <span class="ps-arch-node">TiDB Cloud</span>
-      <span class="ps-arch-arrow">→</span>
-
-      <span class="ps-arch-node">Render</span>
+    <div class="ps-section">
+        <h4 class="ps-section-title">🎯 Problem Statement</h4>
+        <p class="ps-text">
+            Most student placement tools either present a black-box "chance of getting a job"
+            percentage with no explanation, or quietly train and evaluate on leaked/synthetic data
+            without disclosing it. Students are left with a number they can't trust and can't act on,
+            and no visibility into which real, current job-market skills would actually move that
+            number.
+        </p>
+        <p class="ps-text">
+            The goal was to build something a recruiter or interviewer could interrogate line by
+            line — where every claim on screen traces to a real calculation, a real external data
+            source, or an explicit, disclosed limitation, never a fabricated metric.
+        </p>
     </div>
-  </div>
 
-  <!-- Tech Stack -->
-  <div class="ps-section">
-    <h4 class="ps-section-title">Technology Stack</h4>
-
-    <div class="ps-tech-pills">
-      <span class="tech-tag-pill">Python</span>
-      <span class="tech-tag-pill">Flask</span>
-      <span class="tech-tag-pill">MySQL</span>
-      <span class="tech-tag-pill">TiDB Cloud</span>
-      <span class="tech-tag-pill">Scikit-learn</span>
-      <span class="tech-tag-pill">Pandas</span>
-      <span class="tech-tag-pill">NumPy</span>
-      <span class="tech-tag-pill">REST API</span>
-      <span class="tech-tag-pill">Gunicorn</span>
-      <span class="tech-tag-pill">Render</span>
-      <span class="tech-tag-pill">HTML</span>
-      <span class="tech-tag-pill">CSS</span>
-      <span class="tech-tag-pill">JavaScript</span>
+    <div class="ps-section">
+        <h4 class="ps-section-title">💡 Solution</h4>
+        <p class="ps-text">
+            The ML core compares five model families (Logistic Regression, Decision Tree, Random
+            Forest, Gradient Boosting, SVM) via stratified 5-fold cross-validation, selecting by
+            balanced accuracy + ROC-AUC rather than raw accuracy so the imbalanced class split can't
+            game the result. A full leakage audit quantified exactly how much of the training
+            label is recoverable from a linear formula of its own inputs (92.33%) — disclosed
+            directly in the UI, not buried in a report nobody reads.
+        </p>
+        <p class="ps-text">
+            Every readiness estimate ships with an exact explainability breakdown: for the selected
+            Logistic Regression model, each feature's contribution is
+            <code>coefficient × scaled_value</code> — not an approximation, not SHAP — verified in
+            tests to reproduce scikit-learn's own <code>decision_function()</code> output to
+            floating-point precision.
+        </p>
+        <p class="ps-text">
+            Beyond prediction, a Job Market Intelligence layer pulls real postings from the RemoteOK
+            API on a scheduled offline refresh (never live, per-request), builds a Skill Gap Engine
+            ranking missing skills by <code>Gap × Importance</code> against real per-role demand
+            data, and powers an interactive "Am I Qualified?" matcher and a ranked Job Role
+            Recommendation Engine — all reusing one transparent keyword-matching function rather
+            than four separate implementations.
+        </p>
     </div>
-  </div>
 
-  <!-- Impact -->
-  <div class="ps-section">
-    <h4 class="ps-section-title">Impact</h4>
+    <div class="ps-section">
+        <h4 class="ps-section-title">✅ Key Features</h4>
+        <div class="ps-features-grid">
+            <div class="ps-feature"><span class="ps-feature-check">✓</span>Explainable placement readiness estimate (exact coefficient decomposition)</div>
+            <div class="ps-feature"><span class="ps-feature-check">✓</span>5-model comparison, selected by cross-validated balanced accuracy + ROC-AUC</div>
+            <div class="ps-feature"><span class="ps-feature-check">✓</span>Disclosed synthetic dataset + quantified target-leakage audit</div>
+            <div class="ps-feature"><span class="ps-feature-check">✓</span>Real ATS resume scoring (5 weighted categories)</div>
+            <div class="ps-feature"><span class="ps-feature-check">✓</span>Live job-market data via RemoteOK, snapshot-cached architecture</div>
+            <div class="ps-feature"><span class="ps-feature-check">✓</span>Skill Gap Engine — Gap × Importance prioritization</div>
+            <div class="ps-feature"><span class="ps-feature-check">✓</span>Interactive "Am I Qualified?" role-vs-skills matcher</div>
+            <div class="ps-feature"><span class="ps-feature-check">✓</span>Job Role Recommendation Engine (ranked, real match %)</div>
+            <div class="ps-feature"><span class="ps-feature-check">✓</span>Personalized 30/60/90 roadmap with persistent completion tracking</div>
+            <div class="ps-feature"><span class="ps-feature-check">✓</span>Admin analytics: 6 charts, summary stats, student table</div>
+            <div class="ps-feature"><span class="ps-feature-check">✓</span>CSRF protection, rate limiting, timing-safe authentication</div>
+            <div class="ps-feature"><span class="ps-feature-check">✓</span>166-test automated regression suite</div>
+        </div>
+    </div>
 
-    <ul class="ps-impact-list">
-      <li>Built a production-ready AI career guidance platform</li>
-      <li>Implemented secure cloud database architecture</li>
-      <li>Integrated machine learning with real-world analytics</li>
-      <li>Deployed a full-stack application on Render using Gunicorn</li>
-    </ul>
-  </div>
+    <div class="ps-section">
+        <h4 class="ps-section-title">🔬 ML Pipeline</h4>
+        <div class="ps-pipeline">
+            <span class="ps-pipeline-step"><span class="ps-pipeline-num">1</span>Feature Engineering</span>
+            <span class="ps-pipeline-step"><span class="ps-pipeline-num">2</span>Stratified Train/Test Split</span>
+            <span class="ps-pipeline-step"><span class="ps-pipeline-num">3</span>5-Fold Cross-Validation</span>
+            <span class="ps-pipeline-step"><span class="ps-pipeline-num">4</span>Model Comparison</span>
+            <span class="ps-pipeline-step"><span class="ps-pipeline-num">5</span>Selection (Balanced Acc. + ROC-AUC)</span>
+            <span class="ps-pipeline-step"><span class="ps-pipeline-num">6</span>Held-Out Evaluation</span>
+            <span class="ps-pipeline-step"><span class="ps-pipeline-num">7</span>Per-Prediction Explainability</span>
+        </div>
+    </div>
 
-  <!-- Links -->
-  <div class="project-links">
+    <div class="ps-section">
+        <h4 class="ps-section-title">📊 Engineering &amp; Product Impact</h4>
+        <ul class="ps-impact-list">
+            <li>Zero-drift feature engineering — one canonical implementation shared by training and inference</li>
+            <li>Explainability verified against scikit-learn's own decision function, not approximated</li>
+            <li>Real external job-market data, never fabricated stats or fake demand percentages</li>
+            <li>Every "why" behind a score is traceable — no black-box claims anywhere in the UI</li>
+            <li>Security-hardened: CSRF, rate limiting, upload validation, sanitized error handling</li>
+            <li>166 automated tests covering ML consistency, security, and every major user workflow</li>
+        </ul>
+    </div>
 
-    <a
-      class="project-link primary"
-      href="https://placement-ai-9cvb.onrender.com/login"
-      target="_blank"
-    >
-      🚀 Live Demo
-    </a>
+    <div class="ps-section">
+        <h4 class="ps-section-title">🏗️ Architecture</h4>
+        <div class="ps-architecture">
+            <span class="ps-arch-node">Student</span>
+            <span class="ps-arch-arrow">→</span>
+            <span class="ps-arch-node">Flask</span>
+            <span class="ps-arch-arrow">→</span>
+            <span class="ps-arch-node">ML Prediction + Explainability</span>
+            <span class="ps-arch-arrow">→</span>
+            <span class="ps-arch-node">Career Intelligence</span>
+        </div>
+        <div class="ps-architecture" style="margin-top:0.75rem">
+            <span class="ps-arch-node">RemoteOK API</span>
+            <span class="ps-arch-arrow">→</span>
+            <span class="ps-arch-node">Offline Refresh Script</span>
+            <span class="ps-arch-arrow">→</span>
+            <span class="ps-arch-node">MySQL Snapshot</span>
+            <span class="ps-arch-arrow">→</span>
+            <span class="ps-arch-node">Job Market UI</span>
+        </div>
+    </div>
 
-    <a
-      class="project-link secondary"
-      href="https://github.com/Chalu-2810/Placement-AI-AI-Career-Readiness-Job-Intelligence-Platform"
-      target="_blank"
-    >
-      💻 GitHub
-    </a>
+    <div class="ps-section">
+        <h4 class="ps-section-title">🛠️ Tech Stack</h4>
+        <div class="ps-tech-pills">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Flask</span>
+            <span class="tech-tag">MySQL</span>
+            <span class="tech-tag">Scikit-Learn</span>
+            <span class="tech-tag">Pandas</span>
+            <span class="tech-tag">NumPy</span>
+            <span class="tech-tag">Flask-WTF</span>
+            <span class="tech-tag">Flask-Limiter</span>
+            <span class="tech-tag">PyMuPDF</span>
+            <span class="tech-tag">pytest</span>
+            <span class="tech-tag">Gunicorn</span>
+            <span class="tech-tag">Chart.js</span>
+        </div>
+    </div>
 
-  </div>
+    <div class="ps-section">
+        <h4 class="ps-section-title">🧠 Engineering Highlight</h4>
+        <p class="ps-text">
+            The most interesting bug wasn't in the model — it was between it and the app. An audit
+            found the training pipeline and the live inference code were silently computing one of
+            the model's own input features with two different formulas, meaning every live prediction
+            was scored on slightly wrong data. Fixed by consolidating both paths into a single
+            canonical feature-engineering module, with a regression test that would catch the two
+            paths ever diverging again.
+        </p>
+    </div>
 
-</div>
+    <div class="project-links">
+        <a href="https://placement-ai-9cvb.onrender.com/login" target="_blank" rel="noopener noreferrer" class="project-link primary">
+            🚀 Live Demo
+        </a>
+        <a href="https://github.com/Chalu-2810/Placement-AI-AI-Career-Readiness-Job-Intelligence-Platform" target="_blank" rel="noopener noreferrer" class="project-link secondary">
+            💻 GitHub
+        </a>
+    </div>
+</article>
 <!-- ======================================================= -->
 
         <!-- ============ PROJECT 5: Job Market Intelligence Dashboard ============ -->
