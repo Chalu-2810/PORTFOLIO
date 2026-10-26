@@ -2018,148 +2018,152 @@ border: 1px solid rgba(255, 255, 255, 0.1);
 
     <div class="projects-showcase">
 
-        <!-- ============ PROJECT 1: PeoplePulse AI =========== -->
-        <article class="project-showcase-card featured scroll-reveal">
-            <div class="ps-badges">
-                <span class="ps-badge ps-badge-featured">⭐ Featured Project</span>
-                <span class="ps-badge ps-badge-enterprise">Enterprise ML System</span>
-            </div>
+    <!-- ============ PROJECT 1: PeoplePulse AI =========== -->
+<article class="project-showcase-card featured scroll-reveal">
+    <div class="ps-badges">
+        <span class="ps-badge ps-badge-featured">⭐ Featured Project</span>
+        <span class="ps-badge ps-badge-enterprise">Machine Learning &amp; BI</span>
+    </div>
 
-            <h3 class="ps-title">PeoplePulse AI</h3>
-            <p class="ps-subtitle">Enterprise Workforce Intelligence Platform</p>
-            <p class="ps-pitch">
-                Production-grade, end-to-end HR Analytics platform combining Machine Learning, Explainable AI, Business Intelligence and enterprise-grade dashboarding to predict employee attrition and enable data-driven workforce decisions.
-            </p>
+    <h3 class="ps-title">PeoplePulse AI</h3>
+    <p class="ps-subtitle">Enterprise Workforce Intelligence Platform</p>
+    <p class="ps-pitch">
+        An end-to-end HR Analytics platform integrating Machine Learning, Explainable AI, Business Intelligence, and interactive dashboards to analyze employee attrition, generate risk predictions, and support data-driven workforce decisions.
+    </p>
 
-            <div class="ps-metrics">
-                <div class="ps-metric"><div class="ps-metric-value">21</div><div class="ps-metric-label">ML Features</div></div>
-                <div class="ps-metric"><div class="ps-metric-value">3</div><div class="ps-metric-label">Models Compared</div></div>
-                <div class="ps-metric"><div class="ps-metric-value">12</div><div class="ps-metric-label">App Pages</div></div>
-                <div class="ps-metric"><div class="ps-metric-value">48</div><div class="ps-metric-label">Power BI KPIs</div></div>
-                <div class="ps-metric"><div class="ps-metric-value">55+</div><div class="ps-metric-label">DAX Measures</div></div>
-            </div>
+    <div class="ps-metrics">
+        <div class="ps-metric"><div class="ps-metric-value">21</div><div class="ps-metric-label">ML Features</div></div>
+        <div class="ps-metric"><div class="ps-metric-value">3</div><div class="ps-metric-label">Models Compared</div></div>
+        <div class="ps-metric"><div class="ps-metric-value">12</div><div class="ps-metric-label">App Pages</div></div>
+        <div class="ps-metric"><div class="ps-metric-value">48</div><div class="ps-metric-label">Power BI KPIs</div></div>
+        <div class="ps-metric"><div class="ps-metric-value">55+</div><div class="ps-metric-label">DAX Measures</div></div>
+    </div>
 
-            <div class="ps-section">
-                <h4 class="ps-section-title">🎯 Problem Statement</h4>
-                <p class="ps-text">
-                    Employee attrition is one of the most expensive and least understood problems in modern HR management. Replacing a single employee can cost 50–200% of their annual salary once recruiting, onboarding, and lost productivity are factored in — yet most organizations still discover flight risk only after an employee has already resigned. Traditional HR reporting relies on static spreadsheets and lagging indicators, offering little support for proactive, data-driven decision making. HR and business leaders needed a scalable, explainable, and auditable system that could surface at-risk employees early, quantify the specific drivers behind each individual's risk score, and translate raw workforce data into business intelligence that non-technical stakeholders could act on immediately — all while remaining secure, reproducible, and easy to extend as new data arrives.
-                </p>
-                <p class="ps-text">
-                    The challenge was compounded by the need to balance predictive accuracy with interpretability: a black-box model that simply outputs "at risk" is not actionable for HR teams who need to know <em>why</em> and what intervention to prioritize.
-                </p>
-            </div>
+    <div class="ps-section">
+        <h4 class="ps-section-title">🎯 Problem Statement</h4>
+        <p class="ps-text">
+            Employee attrition can increase recruitment costs, disrupt team productivity, and affect organizational performance. Traditional HR reporting often focuses on historical workforce metrics, making it difficult to identify emerging attrition patterns and understand the factors associated with employee turnover. HR teams need a systematic approach to analyze workforce data, identify potential risk indicators, and translate analytical findings into actionable insights.
+        </p>
+        <p class="ps-text">
+            Another key challenge is model interpretability. Predicting attrition risk alone is not enough; decision-makers also need to understand which employee-related factors influence predictions. PeoplePulse AI addresses these challenges by combining predictive analytics, explainable machine learning, and business intelligence in a unified platform.
+        </p>
+    </div>
 
-            <div class="ps-section">
-                <h4 class="ps-section-title">💡 Solution</h4>
-                <p class="ps-text">
-                    I designed and built PeoplePulse AI as a full data engineering and machine learning system rather than a single notebook or script. The pipeline begins with automated data ingestion and cleaning, followed by rigorous exploratory data analysis and statistical testing to understand attrition drivers across departments, tenure bands, compensation, and satisfaction scores. A 21-feature engineering layer encodes categorical variables, scales numerical features, and constructs derived signals (tenure ratios, promotion velocity, compensation-to-market gaps) that meaningfully improve predictive power.
-                </p>
-                <p class="ps-text">
-                    Three supervised classification algorithms — Logistic Regression, Random Forest, and XGBoost — were trained, cross-validated, and benchmarked on precision, recall, and ROC-AUC, with the best-performing model selected for production. To close the interpretability gap, I integrated SHAP (SHapley Additive exPlanations) to generate individual-level explainability: for every employee flagged as at-risk, HR managers can see exactly which factors — compensation, workload, manager relationship, tenure — are driving that specific prediction, turning a prediction into a targeted retention action.
-                </p>
-                <p class="ps-text">
-                    The prediction engine is wrapped in a secure, 12-page Streamlit application with role-based access control (RBAC), so executives, HR managers, and analysts each see the views relevant to their role, with PDF and Excel export for offline reporting. On top of this, a 15-page Power BI dashboard with 55+ DAX measures and 48 KPIs gives leadership a real-time, executive-level view of workforce health. The entire application is containerized with Docker for consistent, reproducible deployment, and backed by an automated pytest test suite to catch regressions before they reach production.
-                </p>
-            </div>
+    <div class="ps-section">
+        <h4 class="ps-section-title">💡 Solution</h4>
+        <p class="ps-text">
+            I developed PeoplePulse AI as an integrated workforce analytics application with a structured data processing and machine learning workflow. The pipeline covers data ingestion, cleaning, exploratory data analysis, statistical analysis, and feature engineering. A 21-feature engineering layer prepares employee attributes for predictive modeling and supports analysis of workforce characteristics such as tenure, compensation, promotion history, and satisfaction.
+        </p>
+        <p class="ps-text">
+            Three classification algorithms — Logistic Regression, Random Forest, and XGBoost — are used to compare employee attrition prediction performance. Model evaluation incorporates classification metrics such as precision, recall, and ROC-AUC. SHAP-based explainability helps interpret individual predictions by showing how relevant features contribute to a model's output.
+        </p>
+        <p class="ps-text">
+            The analytics workflow is presented through a multi-page Streamlit application designed for interactive exploration and reporting. The project also includes Power BI dashboard specifications and workforce KPIs, along with DAX measures for business reporting. Additional engineering features include authentication and role-based access controls, PDF and Excel exports, Docker-based deployment support, automated tests with pytest, and GitHub Actions integration.
+        </p>
+    </div>
 
-            <div class="ps-section">
-                <h4 class="ps-section-title">✅ Key Features</h4>
-                <div class="ps-features-grid">
-                    <div class="ps-feature"><span class="ps-feature-check">✓</span>Employee attrition prediction (classification)</div>
-                    <div class="ps-feature"><span class="ps-feature-check">✓</span>Explainable AI using SHAP value attribution</div>
-                    <div class="ps-feature"><span class="ps-feature-check">✓</span>Automated data preprocessing pipeline</div>
-                    <div class="ps-feature"><span class="ps-feature-check">✓</span>Secure authentication &amp; session management</div>
-                    <div class="ps-feature"><span class="ps-feature-check">✓</span>Role-Based Access Control (RBAC)</div>
-                    <div class="ps-feature"><span class="ps-feature-check">✓</span>12-page interactive Streamlit dashboard</div>
-                    <div class="ps-feature"><span class="ps-feature-check">✓</span>15-page executive Power BI dashboard</div>
-                    <div class="ps-feature"><span class="ps-feature-check">✓</span>PDF &amp; Excel report export</div>
-                    <div class="ps-feature"><span class="ps-feature-check">✓</span>Dockerized, cloud-ready deployment</div>
-                    <div class="ps-feature"><span class="ps-feature-check">✓</span>CI-backed automated testing (pytest + GitHub Actions)</div>
-                </div>
-            </div>
+    <div class="ps-section">
+        <h4 class="ps-section-title">✅ Key Features</h4>
+        <div class="ps-features-grid">
+            <div class="ps-feature"><span class="ps-feature-check">✓</span>Employee attrition prediction using classification models</div>
+            <div class="ps-feature"><span class="ps-feature-check">✓</span>SHAP-based model explainability</div>
+            <div class="ps-feature"><span class="ps-feature-check">✓</span>Automated data preprocessing and feature engineering</div>
+            <div class="ps-feature"><span class="ps-feature-check">✓</span>Exploratory data analysis and statistical insights</div>
+            <div class="ps-feature"><span class="ps-feature-check">✓</span>Model comparison and performance evaluation</div>
+            <div class="ps-feature"><span class="ps-feature-check">✓</span>12-page interactive Streamlit application</div>
+            <div class="ps-feature"><span class="ps-feature-check">✓</span>Power BI workforce KPIs and DAX measures</div>
+            <div class="ps-feature"><span class="ps-feature-check">✓</span>Authentication and role-based access control</div>
+            <div class="ps-feature"><span class="ps-feature-check">✓</span>PDF and Excel reporting capabilities</div>
+            <div class="ps-feature"><span class="ps-feature-check">✓</span>Docker, pytest, and GitHub Actions integration</div>
+        </div>
+    </div>
 
-            <div class="ps-section">
-                <h4 class="ps-section-title">🔬 Machine Learning Pipeline</h4>
-                <div class="ps-pipeline">
-                    <span class="ps-pipeline-step"><span class="ps-pipeline-num">1</span>Dataset Ingestion</span>
-                    <span class="ps-pipeline-step"><span class="ps-pipeline-num">2</span>Data Cleaning</span>
-                    <span class="ps-pipeline-step"><span class="ps-pipeline-num">3</span>Exploratory Data Analysis</span>
-                    <span class="ps-pipeline-step"><span class="ps-pipeline-num">4</span>Feature Engineering</span>
-                    <span class="ps-pipeline-step"><span class="ps-pipeline-num">5</span>Encoding &amp; Scaling</span>
-                    <span class="ps-pipeline-step"><span class="ps-pipeline-num">6</span>Model Training</span>
-                    <span class="ps-pipeline-step"><span class="ps-pipeline-num">7</span>Hyperparameter Tuning</span>
-                    <span class="ps-pipeline-step"><span class="ps-pipeline-num">8</span>Model Evaluation</span>
-                    <span class="ps-pipeline-step"><span class="ps-pipeline-num">9</span>Model Selection</span>
-                    <span class="ps-pipeline-step"><span class="ps-pipeline-num">10</span>Production Deployment</span>
-                </div>
-            </div>
+    <div class="ps-section">
+        <h4 class="ps-section-title">🔬 Machine Learning Pipeline</h4>
+        <div class="ps-pipeline">
+            <span class="ps-pipeline-step"><span class="ps-pipeline-num">1</span>Dataset Ingestion</span>
+            <span class="ps-pipeline-step"><span class="ps-pipeline-num">2</span>Data Cleaning</span>
+            <span class="ps-pipeline-step"><span class="ps-pipeline-num">3</span>Exploratory Data Analysis</span>
+            <span class="ps-pipeline-step"><span class="ps-pipeline-num">4</span>Feature Engineering</span>
+            <span class="ps-pipeline-step"><span class="ps-pipeline-num">5</span>Encoding &amp; Scaling</span>
+            <span class="ps-pipeline-step"><span class="ps-pipeline-num">6</span>Model Training</span>
+            <span class="ps-pipeline-step"><span class="ps-pipeline-num">7</span>Hyperparameter Tuning</span>
+            <span class="ps-pipeline-step"><span class="ps-pipeline-num">8</span>Model Evaluation</span>
+            <span class="ps-pipeline-step"><span class="ps-pipeline-num">9</span>Model Comparison &amp; Selection</span>
+            <span class="ps-pipeline-step"><span class="ps-pipeline-num">10</span>Application Deployment</span>
+        </div>
+    </div>
 
-            <div class="ps-section">
-                <h4 class="ps-section-title">📊 Business Impact</h4>
-                <ul class="ps-impact-list">
-                    <li>Reduced manual workforce analysis from days to minutes</li>
-                    <li>Enables faster, data-driven retention decisions</li>
-                    <li>Predictive insights surface risk before resignation</li>
-                    <li>Actionable, SHAP-backed recommendations per employee</li>
-                    <li>Executive dashboards for leadership visibility</li>
-                    <li>Improved operational efficiency across HR workflows</li>
-                    <li>Quantified attrition risk scoring at individual level</li>
-                    <li>Supports proactive, evidence-based decision support</li>
-                </ul>
-            </div>
+    <div class="ps-section">
+        <h4 class="ps-section-title">📊 Business Impact</h4>
+        <ul class="ps-impact-list">
+            <li>Streamlines workforce data exploration and attrition analysis</li>
+            <li>Helps identify employee characteristics associated with attrition</li>
+            <li>Provides model-driven risk predictions for further investigation</li>
+            <li>Improves prediction transparency through SHAP explanations</li>
+            <li>Consolidates workforce metrics into interactive dashboards</li>
+            <li>Supports faster, evidence-informed workforce planning</li>
+            <li>Enables structured reporting through PDF and Excel exports</li>
+            <li>Demonstrates an integrated ML, explainability, and BI workflow</li>
+        </ul>
+    </div>
 
-            <div class="ps-section">
-                <h4 class="ps-section-title">🏗️ Architecture</h4>
-                <div class="ps-architecture">
-                    <span class="ps-arch-node">Raw Data</span>
-                    <span class="ps-arch-arrow">→</span>
-                    <span class="ps-arch-node">Cleaning</span>
-                    <span class="ps-arch-arrow">→</span>
-                    <span class="ps-arch-node">Feature Engineering</span>
-                    <span class="ps-arch-arrow">→</span>
-                    <span class="ps-arch-node">Model Training</span>
-                    <span class="ps-arch-arrow">→</span>
-                    <span class="ps-arch-node">Prediction API</span>
-                    <span class="ps-arch-arrow">→</span>
-                    <span class="ps-arch-node">Dashboard</span>
-                </div>
-            </div>
+    <div class="ps-section">
+        <h4 class="ps-section-title">🏗️ Architecture</h4>
+        <div class="ps-architecture">
+            <span class="ps-arch-node">Employee Data</span>
+            <span class="ps-arch-arrow">→</span>
+            <span class="ps-arch-node">Data Cleaning</span>
+            <span class="ps-arch-arrow">→</span>
+            <span class="ps-arch-node">Feature Engineering</span>
+            <span class="ps-arch-arrow">→</span>
+            <span class="ps-arch-node">Model Training &amp; Evaluation</span>
+            <span class="ps-arch-arrow">→</span>
+            <span class="ps-arch-node">Attrition Prediction</span>
+            <span class="ps-arch-arrow">→</span>
+            <span class="ps-arch-node">SHAP Explainability</span>
+            <span class="ps-arch-arrow">→</span>
+            <span class="ps-arch-node">Streamlit &amp; BI Reporting</span>
+        </div>
+    </div>
 
-            <div class="ps-section">
-                <h4 class="ps-section-title">🛠️ Tech Stack</h4>
-                <div class="ps-tech-pills">
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">Pandas</span>
-                    <span class="tech-tag">NumPy</span>
-                    <span class="tech-tag">Scikit-Learn</span>
-                    <span class="tech-tag">XGBoost</span>
-                    <span class="tech-tag">SHAP</span>
-                    <span class="tech-tag">Streamlit</span>
-                    <span class="tech-tag">FastAPI</span>
-                    <span class="tech-tag">PostgreSQL</span>
-                    <span class="tech-tag">SQLAlchemy</span>
-                    <span class="tech-tag">Power BI</span>
-                    <span class="tech-tag">Docker</span>
-                    <span class="tech-tag">GitHub Actions</span>
-                    <span class="tech-tag">pytest</span>
-                </div>
-            </div>
+    <div class="ps-section">
+        <h4 class="ps-section-title">🛠️ Tech Stack</h4>
+        <div class="ps-tech-pills">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Pandas</span>
+            <span class="tech-tag">NumPy</span>
+            <span class="tech-tag">SQL</span>
+            <span class="tech-tag">Scikit-Learn</span>
+            <span class="tech-tag">XGBoost</span>
+            <span class="tech-tag">SHAP</span>
+            <span class="tech-tag">Streamlit</span>
+            <span class="tech-tag">FastAPI</span>
+            <span class="tech-tag">PostgreSQL</span>
+            <span class="tech-tag">SQLAlchemy</span>
+            <span class="tech-tag">Power BI</span>
+            <span class="tech-tag">DAX</span>
+            <span class="tech-tag">Docker</span>
+            <span class="tech-tag">GitHub Actions</span>
+            <span class="tech-tag">pytest</span>
+        </div>
+    </div>
 
-            <div class="project-links">
-                <a href="https://peoplepulse-byqimhk6pfbh7ymrygd5bh.streamlit.app/" target="_blank" rel="noopener noreferrer" class="project-link primary">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
-                    </svg>
-                    View Project
-                </a>
-                <a href="https://github.com/Chalu-2810" target="_blank" rel="noopener noreferrer" class="project-link secondary">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
-                    </svg>
-                    GitHub
-                </a>
-            </div>
-        </article>
+    <div class="project-links">
+        <a href="https://peoplepulse-byqimhk6pfbh7ymrygd5bh.streamlit.app/" target="_blank" rel="noopener noreferrer" class="project-link primary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
+            </svg>
+            View Live Project
+        </a>
+        <a href="https://github.com/Chalu-2810" target="_blank" rel="noopener noreferrer" class="project-link secondary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+            </svg>
+            GitHub Repository
+        </a>
+    </div>
+</article>
         
 <!-- ============ PROJECT 2: Sea Level Predictor ============ -->
 <article class="project-showcase-card scroll-reveal">
